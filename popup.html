@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Static Title Tabs</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="popup">
+      <form id="rule-form" class="form">
+        <label class="field">
+          <span>URL</span>
+          <input id="url-input" type="url" autocomplete="off" required>
+        </label>
+
+        <label class="field">
+          <span>Title</span>
+          <input id="title-input" type="text" autocomplete="off" required>
+        </label>
+
+        <label class="check">
+          <input id="lock-input" type="checkbox">
+          <span>Lock this tab</span>
+        </label>
+
+        <button id="save-button" class="primary" type="submit">Add</button>
+      </form>
+
+      <section class="rules">
+        <div class="rules-head">
+          <span>Saved tabs</span>
+          <button id="use-current-button" type="button">Current URL</button>
+        </div>
+        <div id="rules-list" class="rules-list"></div>
+      </section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
