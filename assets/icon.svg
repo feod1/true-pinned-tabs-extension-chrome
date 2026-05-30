@@ -1,0 +1,8 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">true-pinned-tabs icon</title>
+  <desc id="desc">A minimal dark extension icon with a white pinned tab mark.</desc>
+  <rect x="2" y="2" width="124" height="124" rx="24" fill="#1C1C1C"/>
+  <rect x="5" y="5" width="118" height="118" rx="21" stroke="#484848" stroke-width="3"/>
+  <path d="M39 25H89C93.4183 25 97 28.5817 97 33V49C97 53.4183 93.4183 57 89 57H78V76L94 92V101H34V92L50 76V57H39C34.5817 57 31 53.4183 31 49V33C31 28.5817 34.5817 25 39 25Z" fill="#F5F5F5"/>
+  <path d="M64 82V109" stroke="#F5F5F5" stroke-width="14" stroke-linecap="round"/>
+</svg>

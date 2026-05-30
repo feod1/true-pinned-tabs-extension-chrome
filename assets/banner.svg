@@ -1,0 +1,61 @@
+<svg width="1280" height="420" viewBox="0 0 1280 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">true-pinned-tabs</title>
+  <desc id="desc">A dark minimal Chrome extension banner with locked saved tabs and folders.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111111"/>
+      <stop offset="1" stop-color="#202020"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="260" y1="68" x2="1040" y2="350" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#242424"/>
+      <stop offset="1" stop-color="#181818"/>
+    </linearGradient>
+    <filter id="shadow" x="216" y="38" width="848" height="352" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#000000" flood-opacity="0.38"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="420" rx="34" fill="url(#bg)"/>
+  <g opacity="0.18">
+    <path d="M0 332H1280" stroke="#FFFFFF"/>
+    <path d="M0 88H1280" stroke="#FFFFFF"/>
+    <path d="M220 0V420" stroke="#FFFFFF"/>
+    <path d="M1060 0V420" stroke="#FFFFFF"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="260" y="68" width="760" height="282" rx="22" fill="url(#panel)" stroke="#3A3A3A" stroke-width="2"/>
+    <rect x="294" y="104" width="692" height="62" rx="14" fill="#1E1E1E" stroke="#3B3B3B" stroke-width="2"/>
+    <rect x="318" y="126" width="172" height="18" rx="9" fill="#F2F2F2"/>
+    <rect x="512" y="127" width="232" height="16" rx="8" fill="#777777"/>
+    <rect x="812" y="118" width="138" height="34" rx="10" fill="#F1F1F1"/>
+    <rect x="836" y="130" width="90" height="10" rx="5" fill="#171717"/>
+
+    <rect x="294" y="188" width="218" height="42" rx="12" fill="#202020" stroke="#3B3B3B"/>
+    <path d="M326 211h22a6 6 0 0 1 6 6v12h-34v-12a6 6 0 0 1 6-6Z" stroke="#AFAFAF" stroke-width="3"/>
+    <path d="M326 211v-7a6 6 0 0 1 6-6h10a6 6 0 0 1 6 6v7" stroke="#AFAFAF" stroke-width="3"/>
+    <rect x="372" y="202" width="94" height="10" rx="5" fill="#EDEDED"/>
+    <rect x="372" y="218" width="56" height="8" rx="4" fill="#777777"/>
+
+    <rect x="294" y="244" width="218" height="42" rx="12" fill="#202020" stroke="#3B3B3B"/>
+    <path d="M326 267h22a6 6 0 0 1 6 6v12h-34v-12a6 6 0 0 1 6-6Z" stroke="#AFAFAF" stroke-width="3"/>
+    <path d="M326 267v-7a6 6 0 0 1 6-6h10a6 6 0 0 1 6 6v7" stroke="#AFAFAF" stroke-width="3"/>
+    <rect x="372" y="258" width="120" height="10" rx="5" fill="#EDEDED"/>
+    <rect x="372" y="274" width="68" height="8" rx="4" fill="#777777"/>
+
+    <rect x="554" y="188" width="432" height="42" rx="12" fill="#1D1D1D" stroke="#383838"/>
+    <rect x="574" y="202" width="148" height="10" rx="5" fill="#EDEDED"/>
+    <rect x="574" y="218" width="222" height="8" rx="4" fill="#777777"/>
+    <rect x="882" y="198" width="68" height="22" rx="8" fill="#EDEDED"/>
+    <rect x="904" y="205" width="24" height="8" rx="4" fill="#171717"/>
+
+    <rect x="554" y="244" width="432" height="42" rx="12" fill="#1D1D1D" stroke="#383838"/>
+    <rect x="574" y="258" width="118" height="10" rx="5" fill="#EDEDED"/>
+    <rect x="574" y="274" width="256" height="8" rx="4" fill="#777777"/>
+    <rect x="882" y="254" width="68" height="22" rx="8" fill="#EDEDED"/>
+    <rect x="904" y="261" width="24" height="8" rx="4" fill="#171717"/>
+  </g>
+
+  <text x="640" y="60" text-anchor="middle" fill="#F5F5F5" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="42" font-weight="800">true-pinned-tabs</text>
+  <text x="640" y="386" text-anchor="middle" fill="#AFAFAF" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="22" font-weight="600">Named, locked, bookmark-like tabs for Chrome</text>
+</svg>

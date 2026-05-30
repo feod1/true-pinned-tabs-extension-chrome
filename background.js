@@ -19,6 +19,23 @@ function samePageUrl(firstUrl, secondUrl) {
   return Boolean(firstKey && firstKey === getPageKey(secondUrl));
 }
 
+function isNewTabUrl(url) {
+  if (!url) return true;
+
+  return (
+    url === "about:blank" ||
+    url === "about:newtab" ||
+    url === "chrome://newtab/" ||
+    url === "chrome://new-tab-page/" ||
+    url === "chrome://new-tab-page-third-party/" ||
+    url.startsWith("chrome-search://local-ntp/")
+  );
+}
+
+function isNewTab(tab) {
+  return Boolean(tab && isNewTabUrl(tab.pendingUrl || tab.url || ""));
+}
+
 async function readLocal(key, fallback) {
   const value = await chrome.storage.local.get(key);
   return value[key] ?? fallback;
@@ -228,6 +245,17 @@ async function keepWindowOnLockedTab(activeInfo) {
   const lockedTabId = windowLocks[windowKey];
 
   if (lockedTabId && lockedTabId !== activeInfo.tabId) {
+    try {
+      const activeTab = await chrome.tabs.get(activeInfo.tabId);
+      if (isNewTab(activeTab)) {
+        delete windowLocks[windowKey];
+        await setWindowLocks(windowLocks);
+        return;
+      }
+    } catch {
+      // If Chrome cannot return the new active tab, keep the existing lock behavior.
+    }
+
     const tabLocks = await getTabLocks();
     const lock = tabLocks[String(lockedTabId)];
 

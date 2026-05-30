@@ -3,37 +3,57 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Static Title Tabs</title>
+    <title>True Pinned Tabs</title>
     <link rel="stylesheet" href="popup.css">
   </head>
   <body>
     <main class="popup">
       <form id="rule-form" class="form">
-        <label class="field">
-          <span>URL</span>
-          <input id="url-input" type="url" autocomplete="off" required>
-        </label>
+        <div class="fields">
+          <label class="field">
+            <span>URL</span>
+            <input id="url-input" type="url" autocomplete="off" required>
+          </label>
 
-        <label class="field">
-          <span>Title</span>
-          <input id="title-input" type="text" autocomplete="off" required>
-        </label>
+          <label class="field">
+            <span>Title</span>
+            <input id="title-input" type="text" autocomplete="off" required>
+          </label>
+        </div>
 
-        <label class="check">
-          <input id="lock-input" type="checkbox">
-          <span>Lock this tab</span>
-        </label>
+        <div class="form-actions">
+          <label class="check">
+            <input id="lock-input" type="checkbox">
+            <span>Lock</span>
+          </label>
 
-        <button id="save-button" class="primary" type="submit">Add</button>
+          <button id="use-current-button" class="ghost" type="button">Current</button>
+          <button id="save-button" class="primary" type="submit">Add</button>
+        </div>
       </form>
 
-      <section class="rules">
-        <div class="rules-head">
-          <span>Saved tabs</span>
-          <button id="use-current-button" type="button">Current URL</button>
+      <section class="explorer">
+        <div class="explorer-head">
+          <button id="back-button" class="square" type="button" aria-label="Go back">‹</button>
+          <div id="path-label" class="path-label">Saved tabs</div>
+          <button id="add-folder-button" class="ghost" type="button">New folder</button>
         </div>
+
+        <form id="folder-form" class="folder-form" hidden>
+          <input id="folder-name-input" type="text" autocomplete="off" placeholder="Folder name">
+          <button class="primary small" type="submit">Create</button>
+          <button id="cancel-folder-button" class="ghost small" type="button">Cancel</button>
+        </form>
+
         <div id="rules-list" class="rules-list"></div>
       </section>
+
+      <footer class="settings-bar">
+        <label class="settings-check">
+          <input id="lock-default-input" type="checkbox">
+          <span>Lock by default</span>
+        </label>
+      </footer>
     </main>
 
     <script src="popup.js"></script>
