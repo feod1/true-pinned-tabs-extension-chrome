@@ -8,6 +8,7 @@ Named, locked, bookmark-like tabs for Chrome.
 
 - Custom titles for saved pages.
 - Optional tab lock to prevent accidental navigation or switching.
+- Locked tabs stay on their saved page, so they do not drift away or get lost.
 - Bookmark-style popup with folders, drag and drop, and quick open.
 - Query/hash changes and page reloads stay allowed.
 - `Cmd+click`, `Ctrl+click`, middle click, and new tabs stay allowed.

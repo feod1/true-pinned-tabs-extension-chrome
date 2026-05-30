@@ -1,61 +1,63 @@
 <svg width="1280" height="420" viewBox="0 0 1280 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">true-pinned-tabs</title>
-  <desc id="desc">A dark minimal Chrome extension banner with locked saved tabs and folders.</desc>
+  <title id="title">true-pinned-tabs banner</title>
+  <desc id="desc">A before and after banner showing a normal bookmark using the website title and true-pinned-tabs keeping the saved custom tab title.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="420" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#111111"/>
-      <stop offset="1" stop-color="#202020"/>
+      <stop stop-color="#101010"/>
+      <stop offset="1" stop-color="#242424"/>
     </linearGradient>
-    <linearGradient id="panel" x1="260" y1="68" x2="1040" y2="350" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#242424"/>
+    <linearGradient id="panelA" x1="90" y1="105" x2="548" y2="338" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#252525"/>
+      <stop offset="1" stop-color="#191919"/>
+    </linearGradient>
+    <linearGradient id="panelB" x1="732" y1="105" x2="1190" y2="338" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2A2A2A"/>
       <stop offset="1" stop-color="#181818"/>
     </linearGradient>
-    <filter id="shadow" x="216" y="38" width="848" height="352" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#000000" flood-opacity="0.38"/>
+    <filter id="shadow" x="52" y="68" width="1176" height="300" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="24" stdDeviation="26" flood-color="#000000" flood-opacity="0.36"/>
     </filter>
   </defs>
 
   <rect width="1280" height="420" rx="34" fill="url(#bg)"/>
-  <g opacity="0.18">
+  <g opacity="0.14">
+    <path d="M0 92H1280" stroke="#FFFFFF"/>
     <path d="M0 332H1280" stroke="#FFFFFF"/>
-    <path d="M0 88H1280" stroke="#FFFFFF"/>
-    <path d="M220 0V420" stroke="#FFFFFF"/>
-    <path d="M1060 0V420" stroke="#FFFFFF"/>
+    <path d="M640 0V420" stroke="#FFFFFF"/>
+  </g>
+
+  <text x="640" y="62" text-anchor="middle" fill="#F5F5F5" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="42" font-weight="820">true-pinned-tabs</text>
+  <text x="640" y="390" text-anchor="middle" fill="#A8A8A8" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="22" font-weight="620">You cannot accidentally leave or lose your pinned tabs.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="90" y="105" width="458" height="233" rx="24" fill="url(#panelA)" stroke="#3B3B3B" stroke-width="2"/>
+    <text x="126" y="146" fill="#9C9C9C" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="15" font-weight="760" letter-spacing="0.08em">NORMAL BOOKMARK</text>
+
+    <rect x="126" y="174" width="216" height="36" rx="6" fill="#2D2D2D" stroke="#4A4A4A"/>
+    <path d="M152 181L155.8 188.7L164.3 189.9L158.15 195.9L159.6 204.3L152 200.3L144.4 204.3L145.85 195.9L139.7 189.9L148.2 188.7L152 181Z" fill="#F6D365"/>
+    <text x="178" y="198" fill="#F0F0F0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="15" font-weight="760">My Trading Desk</text>
+
+    <path d="M126 286C142 286 150 278 150 262V259C150 246.85 159.85 237 172 237H462C474.15 237 484 246.85 484 259V286H126Z" fill="#3B3B3B"/>
+    <circle cx="181" cy="260" r="16" fill="#F1F1F1"/>
+    <path d="M172 266V258H176V266H172ZM179 266V254H183V266H179ZM186 266V250H190V266H186Z" fill="#777777"/>
+    <text x="216" y="267" fill="#F0F0F0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="17" font-weight="760">Website page title</text>
+    <path d="M453 253L467 267M467 253L453 267" stroke="#BDBDBD" stroke-width="4" stroke-linecap="round"/>
   </g>
 
   <g filter="url(#shadow)">
-    <rect x="260" y="68" width="760" height="282" rx="22" fill="url(#panel)" stroke="#3A3A3A" stroke-width="2"/>
-    <rect x="294" y="104" width="692" height="62" rx="14" fill="#1E1E1E" stroke="#3B3B3B" stroke-width="2"/>
-    <rect x="318" y="126" width="172" height="18" rx="9" fill="#F2F2F2"/>
-    <rect x="512" y="127" width="232" height="16" rx="8" fill="#777777"/>
-    <rect x="812" y="118" width="138" height="34" rx="10" fill="#F1F1F1"/>
-    <rect x="836" y="130" width="90" height="10" rx="5" fill="#171717"/>
+    <rect x="732" y="105" width="458" height="233" rx="24" fill="url(#panelB)" stroke="#474747" stroke-width="2"/>
+    <text x="768" y="146" fill="#CFCFCF" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="15" font-weight="760" letter-spacing="0.08em">WITH TRUE PINNED TABS</text>
 
-    <rect x="294" y="188" width="218" height="42" rx="12" fill="#202020" stroke="#3B3B3B"/>
-    <path d="M326 211h22a6 6 0 0 1 6 6v12h-34v-12a6 6 0 0 1 6-6Z" stroke="#AFAFAF" stroke-width="3"/>
-    <path d="M326 211v-7a6 6 0 0 1 6-6h10a6 6 0 0 1 6 6v7" stroke="#AFAFAF" stroke-width="3"/>
-    <rect x="372" y="202" width="94" height="10" rx="5" fill="#EDEDED"/>
-    <rect x="372" y="218" width="56" height="8" rx="4" fill="#777777"/>
+    <rect x="768" y="174" width="216" height="36" rx="6" fill="#303030" stroke="#555555"/>
+    <path d="M794 181L797.8 188.7L806.3 189.9L800.15 195.9L801.6 204.3L794 200.3L786.4 204.3L787.85 195.9L781.7 189.9L790.2 188.7L794 181Z" fill="#F6D365"/>
+    <text x="820" y="198" fill="#F6F6F6" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="15" font-weight="780">My Trading Desk</text>
 
-    <rect x="294" y="244" width="218" height="42" rx="12" fill="#202020" stroke="#3B3B3B"/>
-    <path d="M326 267h22a6 6 0 0 1 6 6v12h-34v-12a6 6 0 0 1 6-6Z" stroke="#AFAFAF" stroke-width="3"/>
-    <path d="M326 267v-7a6 6 0 0 1 6-6h10a6 6 0 0 1 6 6v7" stroke="#AFAFAF" stroke-width="3"/>
-    <rect x="372" y="258" width="120" height="10" rx="5" fill="#EDEDED"/>
-    <rect x="372" y="274" width="68" height="8" rx="4" fill="#777777"/>
-
-    <rect x="554" y="188" width="432" height="42" rx="12" fill="#1D1D1D" stroke="#383838"/>
-    <rect x="574" y="202" width="148" height="10" rx="5" fill="#EDEDED"/>
-    <rect x="574" y="218" width="222" height="8" rx="4" fill="#777777"/>
-    <rect x="882" y="198" width="68" height="22" rx="8" fill="#EDEDED"/>
-    <rect x="904" y="205" width="24" height="8" rx="4" fill="#171717"/>
-
-    <rect x="554" y="244" width="432" height="42" rx="12" fill="#1D1D1D" stroke="#383838"/>
-    <rect x="574" y="258" width="118" height="10" rx="5" fill="#EDEDED"/>
-    <rect x="574" y="274" width="256" height="8" rx="4" fill="#777777"/>
-    <rect x="882" y="254" width="68" height="22" rx="8" fill="#EDEDED"/>
-    <rect x="904" y="261" width="24" height="8" rx="4" fill="#171717"/>
+    <path d="M768 286C784 286 792 278 792 262V259C792 246.85 801.85 237 814 237H1104C1116.15 237 1126 246.85 1126 259V286H768Z" fill="#E8E8E8"/>
+    <circle cx="839" cy="260" r="16" fill="#171717"/>
+    <path d="M830 266V258H834V266H830ZM837 266V254H841V266H837ZM844 266V250H848V266H844Z" fill="#F2F2F2"/>
+    <text x="874" y="267" fill="#151515" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="17" font-weight="820">My Trading Desk</text>
+    <path d="M1062 262H1078C1081.31 262 1084 264.686 1084 268V277H1056V268C1056 264.686 1058.69 262 1062 262Z" fill="#5F5F5F"/>
+    <path d="M1063 262V255C1063 251.134 1066.13 248 1070 248C1073.87 248 1077 251.134 1077 255V262" stroke="#5F5F5F" stroke-width="4" stroke-linecap="round"/>
+    <path d="M1095 253L1109 267M1109 253L1095 267" stroke="#5F5F5F" stroke-width="4" stroke-linecap="round"/>
   </g>
-
-  <text x="640" y="60" text-anchor="middle" fill="#F5F5F5" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="42" font-weight="800">true-pinned-tabs</text>
-  <text x="640" y="386" text-anchor="middle" fill="#AFAFAF" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="22" font-weight="600">Named, locked, bookmark-like tabs for Chrome</text>
 </svg>
