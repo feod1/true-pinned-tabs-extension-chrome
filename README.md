@@ -1,4 +1,4 @@
-# Static Title Tabs
+# True Pinned Tabs
 
 Real pinned tabs for Chrome: give important pages stable names and make them hard to leave by accident.
 
